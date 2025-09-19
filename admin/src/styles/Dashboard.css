@@ -1,0 +1,240 @@
+/* Dashboard Styles */
+.dashboard {
+  padding: 0;
+}
+
+.dashboard h2 {
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+/* Stats Grid */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+/* Stats Card */
+.stats-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stats-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.stats-card-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.stats-info {
+  flex: 1;
+}
+
+.stats-value {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+  line-height: 1;
+}
+
+.stats-title {
+  color: #7f8c8d;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+.stats-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+
+.stats-icon.patients {
+  background: #e3f2fd;
+  color: #1976d2;
+}
+
+.stats-icon.appointments {
+  background: #f3e5f5;
+  color: #7b1fa2;
+}
+
+.stats-icon.today {
+  background: #e8f5e8;
+  color: #2e7d32;
+}
+
+.stats-icon.completed {
+  background: #fff3e0;
+  color: #f57c00;
+}
+
+.stats-icon.doctors {
+  background: #e8eaf6;
+  color: #303f9f;
+}
+
+.stats-trend {
+  display: flex;
+  align-items: center;
+  margin-top: 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.stats-trend.up {
+  color: #27ae60;
+}
+
+.stats-trend.down {
+  color: #e74c3c;
+}
+
+.trend-icon {
+  margin-right: 0.25rem;
+  font-size: 0.75rem;
+}
+
+/* Recent Activities */
+.recent-activities {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.recent-activities h3 {
+  margin: 0 0 1rem 0;
+  color: #2c3e50;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.activities-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.activity-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding: 0.75rem;
+  border-radius: 6px;
+  background: #f8f9fa;
+  transition: background-color 0.2s ease;
+}
+
+.activity-item:hover {
+  background: #e9ecef;
+}
+
+.activity-icon {
+  font-size: 1.25rem;
+  padding: 0.5rem;
+  border-radius: 50%;
+  background: #e3f2fd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 40px;
+  height: 40px;
+}
+
+.activity-content {
+  flex: 1;
+}
+
+.activity-text {
+  margin: 0 0 0.25rem 0;
+  color: #2c3e50;
+  line-height: 1.4;
+}
+
+.activity-time {
+  font-size: 0.875rem;
+  color: #6c757d;
+}
+
+.no-activities {
+  text-align: center;
+  color: #6c757d;
+  font-style: italic;
+  padding: 2rem;
+}
+
+/* Dashboard Loading States */
+.dashboard-loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .stats-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .stats-card {
+    padding: 1.25rem;
+  }
+  
+  .stats-value {
+    font-size: 1.75rem;
+  }
+  
+  .recent-activities {
+    padding: 1rem;
+  }
+  
+  .activity-item {
+    padding: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .dashboard h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .stats-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 1.25rem;
+  }
+  
+  .activity-icon {
+    font-size: 1rem;
+    min-width: 32px;
+    height: 32px;
+  }
+}

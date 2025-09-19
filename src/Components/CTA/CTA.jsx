@@ -16,7 +16,7 @@ const CTA = () => {
   return (
     <section className="cta">
       <div className="container">
-        <h2>Tafuta Mtaalamu wa Tiba Asili Leo</h2>
+        <h3>Tafuta Mtaalamu wa Tiba Asili Leo</h3>
         <p>Jiunge na mfumo wetu na upate huduma bora za tiba asili kutoka kwa wataalamu wetu</p>
         <div className="cta-buttons">
           <button className="btn-secondary" onClick={handleJoin}>Jiunge Sasa</button>

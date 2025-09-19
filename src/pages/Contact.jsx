@@ -36,20 +36,20 @@ const Contact = () => {
           <h2>Maelezo ya Mawasiliano</h2>
           <div className="contact-item">
             <h3>Anwani</h3>
-            <p>Soko Kuu la Dawa za Asili, Dar es Salaam, Tanzania</p>
+            <p> Dar es Salaam, Tanzania</p>
           </div>
           <div className="contact-item">
             <h3>Simu</h3>
-            <p>+255 755 123 456</p>
+            <p>+255 713 254 000</p>
           </div>
           <div className="contact-item">
             <h3>Barua Pepe</h3>
-            <p>info@tibaasili.co.tz</p>
+            <p>tnyamhanga69@gmail.com</p>
           </div>
           <div className="contact-item">
             <h3>Masaa ya Huduma</h3>
-            <p>Jumatatu - Ijumaa: 8:00 asubuhi - 6:00 jioni</p>
-            <p>Jumamosi: 9:00 asubuhi - 4:00 jioni</p>
+            <p>Jumatatu - Ijumaa: 3:00 asubuhi - 12:00 jioni</p>
+            
           </div>
         </div>
         

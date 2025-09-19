@@ -1,7 +1,7 @@
 .login{
     width: 100%;
     height: 120vh;
-    background: #fce3fe;
+    background: #0a3a88e8;
     padding-top: 100px;
     margin-bottom: 100px;
 }
@@ -19,7 +19,7 @@
     width: 580px;
     height: 72px;
     color: white;
-    background: #ff4141;
+    background: #0a3a88e8;
     margin-top: 30px;
     border: none;
     border-radius: 30px;
@@ -50,6 +50,7 @@
 }
 .login-login span{
     color: #ff4141;
+    cursor: pointer;
     font-weight: 600;
 }
 .login-agree{
@@ -59,4 +60,46 @@
     gap: 20px;
     color: #5c5c5c;
     font-size: 18px;
+}
+@media(max-width:500px){
+    .login{
+        width: 100%;
+        height: auto;
+        margin: auto;
+        padding-bottom: 30px;
+        margin-bottom: 50px;
+    }
+    .login-container{
+        width: 180px;
+        background: linear-gradient(145deg, hsl(0 0% 100%), hsl(42 20% 96%));
+        height: auto;
+        border-radius: 20px;
+        padding: 30px 50px;
+    }
+    .login-container h1{
+        margin: auto;
+        font-size: 20px;
+        text-align: center;
+    }
+    .login-container button{
+        width: 150px;
+        font-size: 15px;
+        height: 40px;
+    }
+    .login-fields{
+        margin-left: -25px;
+    }
+    .login-fields input{
+        height: 50px;
+        font-size: 14px;
+        border-radius: 20px;
+        border:  1px solid #0a3a88e8 ;
+        padding-left: 10px;
+    }
+    .login-login{
+        font-size: 13px;
+    }
+    .login-agree{
+        font-size: 12px;
+    }
 }

@@ -13,7 +13,7 @@ const DiseasesPage = () => {
       <Diseases />
       
       <div className="additional-info container">
-        <h2>Kwa Nini Tumia Tiba Asili?</h2>
+        <h2>Kwa Nini Utumie Tiba Asili?</h2>
         <div className="benefits-grid">
           <div className="benefit-card">
             <i className="fas fa-seedling"></i>
@@ -36,7 +36,7 @@ const DiseasesPage = () => {
           <div className="benefit-card">
             <i className="fas fa-hand-holding-heart"></i>
             <h3>Inayolenga Mwili Mzima</h3>
-            <p>Tiba asili inalenga sababu ya ugonjwa na syo dalili tu</p>
+            <p>Tiba asili inalenga sababu ya ugonjwa na siyo dalili tu</p>
           </div>
         </div>
       </div>

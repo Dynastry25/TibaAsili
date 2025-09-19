@@ -126,13 +126,12 @@
     to { opacity: 1; transform: translateY(0); }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 500px) {
     .container {
         padding: 60px 15px;
     }
-    
-    .section-title {
-        font-size: 2rem;
+    .container  h2{
+        font-size: 1.3rem;
     }
     
     .section-subtitle {
@@ -145,5 +144,8 @@
     
     .disease-card {
         padding: 20px;
+    }
+    .disease-card h3{
+        font-size: 1.2rem;
     }
 }

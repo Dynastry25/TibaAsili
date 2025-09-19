@@ -26,7 +26,6 @@
 }
 
 .footer-section h3::after {
-    content: '';
     position: absolute;
     bottom: -10px;
     left: 0;
@@ -88,6 +87,7 @@
 }
 
 .footer-links li {
+    text-decoration: none;
     margin-bottom: 12px;
 }
 
@@ -128,6 +128,9 @@
     flex-direction: column;
     gap: 15px;
     margin-top: 20px;
+}
+.contact-item span{
+    list-style: none;
 }
 
 .newsletter-input {

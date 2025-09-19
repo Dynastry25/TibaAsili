@@ -39,7 +39,7 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div className="footer-section">
-            <h3>Menyu ya Haraka</h3>
+            <h3>Menyu </h3>
             <ul className="footer-links">
               <li><Link to="/">Nyumbani</Link></li>
               <li><Link to="/doctors">Wataalamu</Link></li>
@@ -67,19 +67,19 @@ const Footer = () => {
             <div className="contact-info">
               <div className="contact-item">
                 <i className="fas fa-map-marker-alt"></i>
-                <span>Sokoine Drive, Dar es Salaam, Tanzania</span>
+                <span> Dar es Salaam, Tanzania</span>
               </div>
               <div className="contact-item">
                 <i className="fas fa-phone"></i>
-                <span>+255 755 123 456</span>
+                <span>+255 713 254 000</span>
               </div>
               <div className="contact-item">
                 <i className="fas fa-envelope"></i>
-                <span>info@tibaasili.go.tz</span>
+                <span>tnyamhanga69@gmail.com</span>
               </div>
               <div className="contact-item">
                 <i className="fas fa-clock"></i>
-                <span>Jumamosi - Alhamisi: 8:00 - 18:00</span>
+                <span>Jumatatu - Ijumaa: 9:00 - 18:00</span>
               </div>
             </div>
           </div>
@@ -107,7 +107,7 @@ const Footer = () => {
         <div className="footer-bottom">
           <div className="footer-bottom-content">
             <div className="copyright">
-              <p>&copy; 2023 Tiba Asili Tanzania. Haki zote zimehifadhiwa.</p>
+              <p>&copy; 2025 Tiba Asili Tanzania. Haki zote zimehifadhiwa.</p>
             </div>
             <div className="footer-bottom-links">
               <a href="#">Sera ya Faragha</a>
@@ -120,10 +120,10 @@ const Footer = () => {
 
       {/* Quick Contact Buttons */}
       <div className="quick-contact">
-        <a href="tel:+255755123456" className="quick-contact-btn phone">
+        <a href="tel:+255713254000" className="quick-contact-btn phone">
           <i className="fas fa-phone"></i>
         </a>
-        <a href="https://wa.me/255755123456" className="quick-contact-btn whatsapp">
+        <a href="https://wa.me/+255713254000" className="quick-contact-btn whatsapp">
           <i className="fab fa-whatsapp"></i>
         </a>
         <a href="#top" className="quick-contact-btn scroll-top">

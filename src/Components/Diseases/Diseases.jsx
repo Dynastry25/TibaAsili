@@ -18,7 +18,7 @@ const Diseases = () => {
 
   return (
     <section className="container" id="diseases">
-      <h2 className="section-title">Magonjwa Tunayotibu</h2>
+      <h2 className="section-title">Aina za Magonjwa ambayo Matabibu Wanapatikana</h2>
       <p className="section-subtitle">Tunatoa huduma za tiba asili kwa magonjwa mbalimbali</p>
       
       <div className="diseases-grid">

@@ -1,0 +1,48 @@
+export const USER_ROLES = {
+  ADMIN: 'admin',
+  DOCTOR: 'doctor',
+  NURSE: 'nurse',
+  PATIENT: 'patient'
+};
+
+export const APPOINTMENT_STATUS = {
+  SCHEDULED: 'scheduled',
+  COMPLETED: 'completed',
+  CANCELLED: 'cancelled',
+  NO_SHOW: 'no_show'
+};
+
+export const APPOINTMENT_TYPES = {
+  CONSULTATION: 'consultation',
+  CHECKUP: 'checkup',
+  FOLLOWUP: 'followup',
+  EMERGENCY: 'emergency'
+};
+
+export const GENDER_OPTIONS = [
+  { value: 'male', label: 'Male' },
+  { value: 'female', label: 'Female' },
+  { value: 'other', label: 'Other' }
+];
+
+export const BLOOD_TYPES = [
+  'A+', 'A-', 'B+', 'B-', 'AB+', 'AB-', 'O+', 'O-'
+];
+
+export const MARITAL_STATUS = [
+  'Single', 'Married', 'Divorced', 'Widowed', 'Separated'
+];
+
+export const PRIORITY_LEVELS = {
+  LOW: 'low',
+  MEDIUM: 'medium',
+  HIGH: 'high',
+  URGENT: 'urgent'
+};
+
+export const NOTIFICATION_TYPES = {
+  SUCCESS: 'success',
+  ERROR: 'error',
+  WARNING: 'warning',
+  INFO: 'info'
+};
