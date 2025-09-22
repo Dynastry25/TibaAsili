@@ -10,7 +10,7 @@ const app = express();
 
 // Middleware
 app.use(cors({
-  origin: ['http://localhost:3000', 'http://localhost:5173'],
+  origin: '',
   credentials: true
 }));
 app.use(express.json());
@@ -19,10 +19,10 @@ app.use(express.urlencoded({ extended: true }));
 // Database connection status
 let isDatabaseConnected = false;
 
-// MongoDB Connection
+// MongoDB Connection - UPDATED WITH YOUR DATABASE
 const connectDB = async () => {
   try {
-    const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/tibaasili';
+    const MONGODB_URI = process.env.MONGODB_URI || 'mongodb+srv://dynastrytv:Dynastry2003@cluster0.wlkvf5s.mongodb.net/tibaasili';
     
     console.log('Connecting to MongoDB...');
     
@@ -126,7 +126,7 @@ userSchema.methods.toJSON = function() {
 
 const User = mongoose.model('User', userSchema);
 
-// Patient Schema
+// Patient Schema - FIXED PHONE VALIDATION
 const patientSchema = new mongoose.Schema({
   name: {
     type: String,
@@ -144,7 +144,7 @@ const patientSchema = new mongoose.Schema({
   phone: {
     type: String,
     required: [true, 'Phone number is required'],
-    match: [ 'Please enter a valid phone number']
+    match: [/^\+?[0-9]{10,15}$/, 'Please enter a valid phone number'] // Fixed regex
   },
   age: {
     type: Number,
@@ -358,7 +358,7 @@ const createSampleAdmin = async () => {
 
 // Generate JWT Token
 const generateToken = (userId) => {
-  return jwt.sign({ userId }, process.env.JWT_SECRET, { expiresIn: '7d' });
+  return jwt.sign({ userId }, process.env.JWT_SECRET || 'fallback_secret_key', { expiresIn: '7d' });
 };
 
 // ==================== ROUTES ====================
@@ -491,7 +491,7 @@ app.get('/api/auth/me', async (req, res) => {
       return res.status(401).json({ message: 'No token provided' });
     }
 
-    const decoded = jwt.verify(token, process.env.JWT_SECRET);
+    const decoded = jwt.verify(token, process.env.JWT_SECRET || 'fallback_secret_key');
     const user = await User.findById(decoded.userId).select('-password');
     
     if (!user) {
@@ -927,7 +927,7 @@ app.get('/api/system/database-stats', async (req, res) => {
 // ==================== MAIN ROUTES ====================
 
 // Basic route
-app.get('/', (req, res) => {
+app.get('/', (req, res)=> {
   res.json({ 
     message: 'Tiba Asili API is running!',
     version: '1.0.0',
